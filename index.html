@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Abdulaziz Almashmoum — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="nav-left">
+        <div class="avatar-circle">AA</div>
+        <div class="nav-name">Abdulaziz Almashmoum</div>
+      </div>
+      <nav class="nav-links">
+        <button class="nav-link-btn" data-section="about">About</button>
+        <button class="nav-link-btn" data-section="projects">Projects</button>
+        <button class="nav-link-btn" data-section="skills">Skills</button>
+        <button class="nav-link-btn" data-section="contact">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Intro / first view (big hub) -->
+    <section class="intro-screen" id="intro">
+      <div class="intro-text">
+        <p class="intro-eyebrow">Portfolio</p>
+        <h1 class="intro-title">Abdulaziz Almashmoum</h1>
+        <p class="intro-subtitle">
+          Computer Science undergraduate at the University of Bristol. I build systems,
+          tools, and games — from distributed backends and real-time web
+          to fast-paced Godot prototypes.
+        </p>
+        <div class="intro-meta">
+          <span class="intro-chip">Systems &amp; Web</span>
+          <span class="intro-chip">Game Development</span>
+          <span class="intro-chip">Infrastructure &amp; Tools</span>
+        </div>
+      </div>
+
+      <div class="intro-actions">
+        <p class="intro-label">Explore</p>
+        <div class="intro-buttons">
+          <button class="intro-btn" data-section="about">
+            <span class="label">About</span>
+            <span class="caption">Who I am and how I work</span>
+          </button>
+          <button class="intro-btn" data-section="projects">
+            <span class="label">Projects</span>
+            <span class="caption">Systems, games, and tools</span>
+          </button>
+          <button class="intro-btn" data-section="skills">
+            <span class="label">Skills</span>
+            <span class="caption">Stacks, engines, and tooling</span>
+          </button>
+          <button class="intro-btn" data-section="contact">
+            <span class="label">Contact</span>
+            <span class="caption">Email and links</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-view">
+      <div class="section-card">
+        <header class="section-header-row">
+          <h2>About</h2>
+          <span class="section-pill">Overview</span>
+        </header>
+
+        <div class="section-body">
+          <p class="lead">
+            Computer Science student building systems, tools, and games.
+          </p>
+          <p>
+            I’m a CS undergraduate at the University of Bristol and Co-Founder &amp;
+            Co-President of the Game Development &amp; Design Society (GDD).
+            Most of my time is spent building things — real-time web systems,
+            developer tooling, and game projects — and learning by shipping.
+          </p>
+          <p>
+            I like jumping between stacks, experimenting with different architectures,
+            and taking projects from idea to something people can actually use.
+          </p>
+
+          <div class="hero-meta">
+            <span>📍 Bristol, UK</span>
+            <span>🎓 BSc Computer Science — University of Bristol</span>
+            <span>🎮 Co-Founder &amp; Co-President, GDD Society</span>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn primary" data-section="projects">View projects</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-view">
+      <div class="section-card">
+        <header class="section-header-row">
+          <div>
+            <h2>Projects</h2>
+            <p class="section-subtitle">
+              Highlighting systems work, game development, and society projects.
+            </p>
+          </div>
+          <div class="section-tabs" id="project-tabs">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="systems">Systems &amp; Web</button>
+            <button class="tab-btn" data-filter="game">Game Dev</button>
+            <button class="tab-btn" data-filter="society">Society</button>
+            <button class="tab-btn" data-filter="coursework">Coursework</button>
+            <button class="tab-btn" data-filter="personal">Personal</button>
+          </div>
+        </header>
+
+        <div id="projects-grid" class="projects-grid">
+          <!-- Cards are injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-view">
+      <div class="section-card">
+        <header class="section-header-row">
+          <h2>Skills</h2>
+          <span class="section-pill">Stacks &amp; Tools</span>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Go, Python, GDScript, Java, C, JavaScript</p>
+          </div>
+          <div class="skill-group">
+            <h3>Web &amp; Backend</h3>
+            <p>WebSockets, REST APIs, Linux deployment, GitHub Actions basics</p>
+          </div>
+          <div class="skill-group">
+            <h3>Game Development</h3>
+            <p>Godot 4, Unreal Engine 5 (Blueprints), gameplay prototyping, UI/UX</p>
+          </div>
+          <div class="skill-group">
+            <h3>Systems &amp; Infra</h3>
+            <p>Distributed systems, AWS EC2, Raspberry Pi hosting, basic networking</p>
+          </div>
+          <div class="skill-group">
+            <h3>Community &amp; Teaching</h3>
+            <p>Running GDD Bristol, organising workshops, mentoring new developers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-view">
+      <div class="section-card">
+        <header class="section-header-row">
+          <h2>Contact</h2>
+          <span class="section-pill">Let’s talk</span>
+        </header>
+
+        <p class="section-subtitle">
+          Open to internships, collaborations, and anything interesting in software,
+          systems, or game tech.
+        </p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:azizmashmoum@gmail.com">
+            <h3>Email</h3>
+            <p>azizmashmoum@gmail.com</p>
+          </a>
+          <a class="contact-card" href="https://github.com/Zingawawoo" target="_blank">
+            <h3>GitHub</h3>
+            <p>github.com/Zingawawoo</p>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/abdulazizmashmoum" target="_blank">
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/abdulazizmashmoum</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Abdulaziz Almashmoum</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
